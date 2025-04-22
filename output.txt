@@ -1,0 +1,61 @@
+(base) dummyUsers@dummyUserss-MacBook-Air 8_Vector_Store_Retriever_Memory_Agent % python main.py
+/Users/dummyUsers/Documents/Learning/AgenticAI/8_Vector_Store_Retriever_Memory_Agent/main.py:21: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  retriever_memory = VectorStoreRetrieverMemory(
+/Users/dummyUsers/Documents/Learning/AgenticAI/8_Vector_Store_Retriever_Memory_Agent/main.py:27: LangChainDeprecationWarning: The class `ConversationChain` was deprecated in LangChain 0.2.7 and will be removed in 1.0. Use :meth:`~RunnableWithMessageHistory: https://python.langchain.com/v0.2/api_reference/core/runnables/langchain_core.runnables.history.RunnableWithMessageHistory.html` instead.
+  conversation = ConversationChain(
+ Semantic Memory Agent
+
+ User: I need a function to convert Celsius to Fahrenheit.
+
+
+> Entering new ConversationChain chain...
+Prompt after formatting:
+The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.
+
+Current conversation:
+This is a starter memory document.
+Human: I need a function to convert Celsius to Fahrenheit.
+AI:
+
+> Finished chain.
+ Assistant:
+Sure! The formula to convert Celsius to Fahrenheit is F = C * 9/5 + 32. So if you input a temperature in Celsius, I can easily calculate the equivalent temperature in Fahrenheit for you. Just let me know the Celsius value you want to convert!
+
+ User: Now add Kelvin support to the function we discussed.
+
+
+> Entering new ConversationChain chain...
+Prompt after formatting:
+The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.
+
+Current conversation:
+input: I need a function to convert Celsius to Fahrenheit.
+response: Sure! The formula to convert Celsius to Fahrenheit is F = C * 9/5 + 32. So if you input a temperature in Celsius, I can easily calculate the equivalent temperature in Fahrenheit for you. Just let me know the Celsius value you want to convert!
+This is a starter memory document.
+Human: Now add Kelvin support to the function we discussed.
+AI:
+
+> Finished chain.
+ Assistant:
+Great idea! To convert Celsius to Kelvin, you simply add 273.15 to the Celsius temperature. So the formula to convert Celsius to Kelvin is K = C + 273.15. I can easily modify the function to include support for converting Celsius to Kelvin as well. Just let me know if you want to convert a temperature to Kelvin instead of Fahrenheit!
+
+ Retrieved Memory:
+ input: I need a function to convert Celsius to Fahrenheit.
+response: Sure! The formula to convert Celsius to Fahrenheit is F = C * 9/5 + 32. So if you input a temperature in Celsius, I can easily calculate the equivalent temperature in Fahrenheit for you. Just let me know the Celsius value you want to convert!
+input: Now add Kelvin support to the function we discussed.
+response: Great idea! To convert Celsius to Kelvin, you simply add 273.15 to the Celsius temperature. So the formula to convert Celsius to Kelvin is K = C + 273.15. I can easily modify the function to include support for converting Celsius to Kelvin as well. Just let me know if you want to convert a temperature to Kelvin instead of Fahrenheit!
+This is a starter memory document.
+
+📊 Token Usage Summary:
+Tokens Used: 359
+	Prompt Tokens: 229
+		Prompt Tokens Cached: 0
+	Completion Tokens: 130
+		Reasoning Tokens: 0
+Successful Requests: 2
+Total Cost (USD): $0.0003095
+(base) dummyUsers@dummyUserss-MacBook-Air 8_Vector_Store_Retriever_Memory_Agent %               
+
+
+
+
